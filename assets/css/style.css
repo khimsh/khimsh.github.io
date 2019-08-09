@@ -1,0 +1,247 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo h1 {
+  font-size: 18px;
+  font-weight: medium;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  color: #fff;
+}
+
+.nav ul li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.hero,
+.contact {
+  display: flex;
+  height: 100vh;
+}
+
+.hero > .half,
+.contact > .half {
+  flex: 0 0 50%;
+}
+
+.half {
+  padding: 80px;
+}
+
+.half-dark {
+  background-color: #242425;
+  color: #fff;
+}
+
+.text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 166%;
+}
+
+.text span {
+  color: #00a3ff;
+}
+
+/* .cta {
+} */
+
+.btn {
+  border: none;
+  width: 260px;
+  height: 54px;
+  background: #00a3ff;
+  cursor: pointer;
+
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 166%;
+  text-transform: lowercase;
+  color: #000000;
+}
+
+.arr {
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+}
+
+.arr svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.works {
+  height: 100vh;
+  background: #242425;
+}
+
+.testemonials {
+  height: 100vh;
+  background: #fff;
+}
+
+.testemonials .arr svg {
+  fill: #242425;
+}
+
+/* Form */
+fieldset {
+  border: none;
+}
+
+label {
+  font-size: 14px;
+  line-height: 166%;
+  color: #ffffff;
+  display: block;
+}
+
+label span {
+  color: #00a3ff;
+}
+
+input,
+textarea {
+  display: block;
+  background: #2a2a2b;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  width: 320px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 400px;
+}
+
+.icon {
+  fill: rgba(0, 162, 255, 0.2);
+  width: 60px;
+  height: 60px;
+}
+
+.social ul {
+  list-style-type: none;
+}
+
+.social li,
+.mail p {
+  display: flex;
+  align-items: center;
+}
+
+.social li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.social li a,
+.mail p a {
+  font-size: 22px;
+  line-height: 166%;
+  color: #000000;
+  transform: translateX(-40px);
+}
+
+.social h2,
+.mail h2,
+.contact-form h2 {
+  font-size: 38px;
+  line-height: 166%;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.contact-form h2 {
+  color: #fff;
+}
+
+.social {
+  margin-bottom: 40px;
+}
+
+.testemonials,
+.works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.testemonial {
+  height: 300px;
+  padding: 30px;
+  background: #242425;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testemonial blockquote {
+  font-size: 16px;
+  line-height: 170%;
+  color: #ffffff;
+}
+
+.testemonial cite {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 170%;
+  color: #ffffff;
+  display: block;
+  text-align: right;
+}
+
+.glide__track {
+  margin-bottom: 10px;
+}
+
+.work {
+  height: 360px;
+  background: #f2f1ff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 15px 0;
+}
+
+.work h3 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 166%;
+  color: #000000;
+  text-align: center;
+}
