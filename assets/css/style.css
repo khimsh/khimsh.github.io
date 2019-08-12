@@ -1,3 +1,9 @@
+:root {
+  --color-main: #00a3ff;
+  --color-dark: #242425;
+  --color-light: #fff;
+}
+
 *,
 *::before,
 *::after {
@@ -24,6 +30,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100000;
 }
 
 .logo h1 {
@@ -34,7 +41,7 @@ body {
 .nav ul {
   display: flex;
   list-style-type: none;
-  color: #fff;
+  color: var(--color-light);
 }
 
 .nav ul li:not(:last-child) {
@@ -52,13 +59,30 @@ body {
   flex: 0 0 50%;
 }
 
+.hero > .half {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero > .cta {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-80%);
+}
+
+.hero > .half:first-child {
+  position: relative;
+}
+
 .half {
   padding: 80px;
 }
 
 .half-dark {
-  background-color: #242425;
-  color: #fff;
+  background-color: var(--color-dark);
+  color: var(--color-light);
 }
 
 .text {
@@ -70,24 +94,21 @@ body {
 }
 
 .text span {
-  color: #00a3ff;
+  color: var(--color-main);
 }
-
-/* .cta {
-} */
 
 .btn {
   border: none;
-  width: 260px;
-  height: 54px;
-  background: #00a3ff;
+  padding: .3em 2.4em;
+  border-radius: .05em;
+  background: var(--color-main);
   cursor: pointer;
 
   font-weight: normal;
   font-size: 24px;
   line-height: 166%;
   text-transform: lowercase;
-  color: #000000;
+  color: var(--color-dark);
 }
 
 .arr {
@@ -100,21 +121,21 @@ body {
 .arr svg {
   width: 24px;
   height: 24px;
-  fill: #fff;
+  fill: var(--color-light);
 }
 
 .works {
   height: 100vh;
-  background: #242425;
+  background: var(--color-dark);
 }
 
 .testemonials {
   height: 100vh;
-  background: #fff;
+  background: var(--color-light);
 }
 
 .testemonials .arr svg {
-  fill: #242425;
+  fill: var(--color-dark);
 }
 
 /* Form */
@@ -125,12 +146,12 @@ fieldset {
 label {
   font-size: 14px;
   line-height: 166%;
-  color: #ffffff;
+  color: var(--color-light);
   display: block;
 }
 
 label span {
-  color: #00a3ff;
+  color: var(--color-main);
 }
 
 input,
@@ -138,10 +159,19 @@ textarea {
   display: block;
   background: #2a2a2b;
   border: none;
-  border-bottom: 1px solid #fff;
-  padding: 10px;
-  width: 320px;
+  border-bottom: 1px solid var(--color-light);
+  padding: 5px 10px;
+  width: 300px;
   margin-bottom: 20px;
+
+  color: var(--color-light);
+  font-size: 15px;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
 }
 
 textarea {
@@ -170,9 +200,9 @@ textarea {
 
 .social li a,
 .mail p a {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 166%;
-  color: #000000;
+  color: var(--color-dark);
   transform: translateX(-40px);
 }
 
@@ -181,12 +211,12 @@ textarea {
 .contact-form h2 {
   font-size: 38px;
   line-height: 166%;
-  color: #000000;
-  margin-bottom: 30px;
+  color: var(--color-dark);
+  margin-bottom: 25px;
 }
 
 .contact-form h2 {
-  color: #fff;
+  color: var(--color-light);
 }
 
 .social {
@@ -204,7 +234,7 @@ textarea {
 .testemonial {
   height: 300px;
   padding: 30px;
-  background: #242425;
+  background: var(--color-dark);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   display: flex;
@@ -215,14 +245,14 @@ textarea {
 .testemonial blockquote {
   font-size: 16px;
   line-height: 170%;
-  color: #ffffff;
+  color: var(--color-light);
 }
 
 .testemonial cite {
   font-style: italic;
   font-size: 16px;
   line-height: 170%;
-  color: #ffffff;
+  color: var(--color-light);
   display: block;
   text-align: right;
 }
@@ -233,7 +263,7 @@ textarea {
 
 .work {
   height: 360px;
-  background: #f2f1ff;
+  background: var(--color-light);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 15px 0;
 }
@@ -242,6 +272,16 @@ textarea {
   font-size: 18px;
   font-weight: normal;
   line-height: 166%;
-  color: #000000;
+  color: var(--color-dark);
   text-align: center;
+}
+
+
+/* Utilities */
+.light {
+  color: var(--color-light)
+}
+
+.dark {
+  color: var(--color-dark);
 }
