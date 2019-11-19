@@ -1,0 +1,23 @@
+.header {
+    padding: 25px 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        h1 {
+            a {
+                display: block;
+                color: $color-gray;
+                font-weight: 700;
+                font-size: 20px;
+                text-decoration: none;
+                span {
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}

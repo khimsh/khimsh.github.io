@@ -5,234 +5,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ia Khimsh</title>
+    <meta name="description" content="Ia Khimshiashvili - Front-end web developer.">
+    <title>Ia Khimsh - Portfolio</title>
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500&display=swap" rel="stylesheet">
-    <!-- CSS-->
-    <!-- Required Core Stylesheet -->
-    <link rel="stylesheet" href="assets/css/glide.core.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font: Oswald -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
 
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+
+    <!-- Icon Font: Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">
-            <h1>Ia Khimsh</h1>
-        </div>
+        <div class="container header__container">
+            <div class="header__logo">
+                <h1><a href="/"><span>I</span>a Kh<span>i</span>msh</a></h1>
+            </div>
 
-        <nav class="nav">
-            <ul>
-                <li>works</li>
-                <li>testemonials</li>
-                <li>contact</li>
-            </ul>
-        </nav>
+            <nav class="main-navigation">
+                <h3 class="sr-only">Main Navigation</h3>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">works</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav><!-- end Main Nav -->
+
+            <nav class="lang-navigation">
+                <h3 class="sr-only">Choose Language</h3>
+                <ul>
+                    <li><a href="#">en</a></li>
+                    <li><a href="#">de</a></li>
+                </ul>
+            </nav><!-- end Lang Nav -->
+
+            <!-- Hamburger Icon: only shown on mobile -->
+            <div class="nav-icon">
+                <button class="nav-icon__btn">
+                    <div class="icon nav-icon-1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div><!-- end Hamburger Icon -->
+        </div><!-- end Container -->
     </header>
 
-    <div class="hero">
-        <div class="half">
-            <div class="text">
-                <p>Developing <span>User Interfaces</span>, <br>
-                    <span>Solving</span> Problems, <br>
-                    Fixing <span>bugs</span>, <br>
-                    Bringing order to chaos</p>
-            </div>
-        </div>
-        <div class="half half-dark">
-            <div class="text">
-                <p>with one line of code <br>
-                    at a time</p>
-            </div>
-        </div>
+    <section class="section hero">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <div>
+                    <h2 class="hero__tagline">I'll be the frankenstain to your ideas.</h2>
 
-        <button class="btn cta">get in touch</button>
-    </div>
 
-    <div class="works">
-        <div class="glide works-glide">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide work">
+                    <div class="hero__ctas">
+                        <a href="#" class="main-cta">View my Works</a>
+                        <a href="#" class="secondary-cta">Get in Touch</a>
+                    </div>
+
+                    <ul class="social-links">
+                        <li>
+                            <a href="mailto:i.khimsh@gmail.com" target="_blank" rel="noreferrer">
+                                <i class="fas fa-envelope"></i>
+                                <span class="sr-only">i.khimsh@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="github.com/khimsh" target="_blank" rel="noreferrer">
+                                <i class="fab fa-git-alt"></i>
+                                <span class="sr-only">github.com/khimsh</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/ia-khimsh/" target="_blank" rel="noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                                <span class="sr-only">https://www.linkedin.com/in/ia-khimsh/</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="decoration">
+                    <img src="assets/img/decoration.png">
+                </div>
+
+            </div>
+
+
+        </div><!-- end Container -->
+
+    </section><!-- End section contacts -->
+
+    <section class="section works" id="workSection">
+        <div class="works__container">
+            <!-- Works -->
+            <div class="work">
+                <div class="work__inner">
+                    <div class="work__front">
+                        <h2>Blaine Fuller</h2>
+                    </div>
+
+                    <div class="work__back">
+                        <h3>Blaine Fuller</h3>
+                        <p>blainefuckingfuller.com is a portfolio website for an american writer/director/producer.</p>
+                        <p>My contribution: HTML, CSS, JS</p>
+                        <a href="http://blainefuckingfuller.com/" target="_blank" rel="noreferrer">>http://blainefuckingfuller.com/</a>
+                    </div>
+                </div><!-- .work__inner -->
+            </div><!-- .work -->
+
+            <div class="work">
+                <div class="work__inner">
+                    <div class="work__front">
+                        <h2>Luxury Real Estate Agency - White Estate</h2>
+                    </div>
+
+                    <div class="work__back">
+                        <h3>Luxury Real Estate Agency - White Estate</h3>
+                        <p>White Estate is a real estate agency located in Nice.</p>
+                        <p>My contribution: SCSS, modification of existing angular components to fit new designs.</p>
+                        <a href="https://white-estate.fr/en" target="_blank" rel="noreferrer">>https://white-estate.fr/en</a>
+                    </div>
+                </div><!-- .work__inner -->
+            </div><!-- .work -->
+
+            <div class="work">
+                <div class="work__inner">
+                    <div class="work__front">
+                        <h2>AlecaLOL</h2>
+                    </div>
+
+                    <div class="work__back">
                         <h3>AlecaLOL</h3>
-                    </li>
-                    <li class="glide__slide work">
-                        <h3>Intertecs</h3>
-                    </li>
-                    <li class="glide__slide work">
-                        <h3>Gallery</h3>
-                    </li>
-                    <li class="glide__slide work">
-                        <h3>Planet Readmore</h3>
-                    </li>
-                    <li class="glide__slide work">
-                        <h3>PUBG</h3>
-                    </li>
-                </ul>
-            </div>
+                        <p>AlecaLOL is the most complete app for League Of Legends. Apart from the usual stats, AlecaLOL
+                        lets you automatically set up your runes, choose a random skin and win amazing rewards!</p>
+                        <p>My contribution: Front-end work(HTML, CSS, JS) and parts of the UI
+                        design.</p>
+                        <a href="http://www1.overwolf.com/app/Alejandro_Cabrerizo-AlecaLOL" target="_blank" rel="noreferrer">>view the app in overwolf
+                        store</a>
+                    </div>
+                </div><!-- .work__inner -->
+            </div><!-- .work -->
 
-            <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left arr arr-left" data-glide-dir="<">
-                    <svg>
-                        <use href="assets/img/icons/chevron-left.svg#left" />
-                    </svg>
-                </button>
-                <button class="glide__arrow glide__arrow--right arr arr-right" data-glide-dir=">">
-                    <svg>
-                        <use href="assets/img/icons/chevron-right.svg#right" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
+            <div class="work">
+                <div class="work__inner">
+                    <div class="work__front">
+                        <h2>Is today a National Holiday?</h2>
+                    </div>
 
-    <div class="testemonials">
-        <div class="glide testemonials-glide">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide testemonial">
-                        <blockquote>
-                            Perfect! Solved my tasks very quickly! Great communication skills, understood tasks
-                            immediately and asked pertinent questions. I'm very happy with the work done and 100%
-                            recommend!
-                        </blockquote>
-                        <cite>- Upwork</cite>
-                    </li>
-                    <li class="glide__slide testemonial">
-                        <blockquote>Ia is highly skilled with design. The first deliverable she gave me met all my
-                            expectations and exceed them in quality. She was on time and made changes exactly as I
-                            suggested. I'm already thinking of what other jobs I should send to her. Definitely
-                            recommend.</blockquote>
-                        <cite>- Upwork</cite>
-                    </li>
-                    <li class="glide__slide testemonial">
-                        <blockquote>
-                            Ia khimshiashvili did a great job converting an adobe file into and html file for me. She
-                            finished the project quickly and accurately!
-                        </blockquote>
-                        <cite>- Upwork</cite>
-                    </li>
-                    <li class="glide__slide testemonial">
-                        <blockquote>I contracted Ia to produce a more unconventional piece of work and she completed it
-                            with high quality and a quick turnaround, a dream when looking for a freelancer. She's also
-                            a great communicator and is not shy to input her own creative ideas. Thanks Ia!</blockquote>
-                        <cite>- Upwork</cite>
-                    </li>
-                    <li class="glide__slide testemonial">
-                        <blockquote>Went well above my needs. Thank you very much. Great quality work submitted, very
-                            fast turnaround, and an overall pleasure to work with.</blockquote>
-                        <cite>- Upwork</cite>
-                    </li>
-                </ul>
-            </div>
+                    <div class="work__back">
+                        <h3>Is today a National Holiday?</h3>
+                        <p>"Is it a holiday?" is an app that makes use of calendarific api to determin whether the given
+                        day is a national holiday.</p>
+                        <p>My contribution: All of the app.</p>
+                        <a href="https://khimsh.github.io/isitaholiday/" target="_blank" rel="noreferrer">>https://khimsh.github.io/isitaholiday/</a>
+                    </div>
+                </div><!-- .work__inner -->
+            </div><!-- .work -->
 
-            <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left arr arr-left" data-glide-dir="<">
-                    <svg>
-                        <use href="assets/img/icons/chevron-left.svg#left" />
-                    </svg>
-                </button>
-                <button class="glide__arrow glide__arrow--right arr arr-right" data-glide-dir=">">
-                    <svg>
-                        <use href="assets/img/icons/chevron-right.svg#right" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="contact">
-        <div class="half">
-            <div class="social">
-                <h2>Find me on social network</h2>
-                <ul>
-                    <li>
-                        <svg class="icon">
-                            <use href="assets/img/icons/linkedin.svg#linkedin" />
-                        </svg>
-                        <a href="https://www.linkedin.com/in/ia-khimsh/"
-                            target="_blank">https://www.linkedin.com/in/ia-khimsh/</a>
-                    </li>
-                    <li>
-                        <svg class="icon">
-                            <use href="assets/img/icons/twitter.svg#twitter" />
-                        </svg>
-                        <a href="https://twitter.com/khimsh1" target="_blank">https://twitter.com/khimsh1</a>
-                    </li>
-                    <li>
-                        <svg class="icon">
-                            <use href="assets/img/icons/github.svg#github" />
-                        </svg>
-                        <a href="https://github.com/khimsh" target="_blank">https://github.com/khimsh</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="mail">
-                <h2>Send an E-Mail</h2>
-                <p>
-                    <svg class="icon">
-                        <use href="assets/img/icons/mail.svg#mail" />
-                    </svg>
-                    <a href="mailto:ia.khimsh@gmail.com" target="_blank">ia.khimsh@gmail.com</a>
-                </p>
-            </div>
-        </div>
-        <div class="half half-dark">
-            <div class="contact-form">
-                <h2>or say hello</h2>
-                <form>
-                    <fieldset>
-                        <div class="form-field">
-                            <label for="name">Name<span>*</span></label>
-                            <input type="text" id="name" name="name">
-                        </div>
-                        <div class="form-field">
-                            <label for="email">E-Mail<span>*</span></label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                        <div class="form-field">
-                            <label for="subject">Subject<span>*</span></label>
-                            <input type="text" name="subject" id="subject">
-                        </div>
-                        <div class="form-field">
-                            <label for="message">Message<span>*</span></label>
-                            <textarea name="message" id="message" rows="4"></textarea>
-                        </div>
-                    </fieldset>
-                    <button class="btn">send</button>
-                </form>
-            </div>
-        </div>
-    </div>
+        </div><!-- .works__container -->
+    </section>
+    <!-- End section works -->
 
 
-
-    <!-- JS -->
-    <script src="assets/js/glide.min.js"></script>
     <script src="assets/js/script.js"></script>
-
-    <script>
-        new Glide('.works-glide', {
-            perView: 3,
-            breakpoints: {
-                900: {
-                    perView: 2
-                },
-                600: {
-                    perView: 1
-                }
-            }
-        }).mount()
-        new Glide('.testemonials-glide', {
-            perView: 2,
-            breakpoints: {
-                900: {
-                    perView: 1
-                }
-            }
-        }).mount()
-    </script>
 </body>
 
 </html>
