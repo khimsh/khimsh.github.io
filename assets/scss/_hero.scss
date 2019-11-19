@@ -19,6 +19,10 @@
         margin-bottom: 20px;
         font-weight: 500;
         font-size: 48px;
+
+        @media only screen and (max-width: 1500px) {
+            font-size: 36px;
+        }
     }
 
     &__ctas {
@@ -39,16 +43,26 @@
             background-color: $color-main;
             border-radius: 2px;
             box-shadow: 0 4px 4px rgba(0,0,0,.25);
+
+            @media only screen and (max-width: 1500px) {
+                padding: 6px 26px;
+                font-size: 20px;
+            }
         }
 
         .secondary-cta {
             padding: 8px 32px;
             color: $color-gray;
-            font-weight: 500;
+            font-weight: 300;
             font-size: 24px;
             text-decoration: none;
             background-color: $color-darkgray;
             border-radius: 2px;
+
+            @media only screen and (max-width: 1500px) {
+                padding: 6px 26px;
+                font-size: 20px;
+            }
         }
     }
 }
@@ -73,6 +87,10 @@
                 font-size: 24px;
                 color: $color-gray;
                 transition: all .2s ease-in;
+
+                @media only screen and (max-width: 1500px) {
+                    font-size: 20px;
+                }
             }
         }
     }

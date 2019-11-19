@@ -13,6 +13,11 @@
             margin-bottom: 25px;
             font-weight: 500;
             font-size: 32px;
+
+            @media only screen and (max-width: 1500px) {
+                margin-bottom: 15px;
+                font-size: 26px;
+            }
         }
         p {
             font-weight: 300;
@@ -20,6 +25,13 @@
             max-width: 70%;
             &:not(:last-child) {
                 margin-bottom: 15px;
+
+                @media only screen and (max-width: 1500px) {
+                    margin-bottom: 5px;
+                }
+            }
+            @media only screen and (max-width: 1500px) {
+                font-size: 20px;
             }
         }
         a {
@@ -30,6 +42,10 @@
                 color: $color-gray;
                 font-size: 24px;
                 transition: all .2s ease-in;
+
+                @media only screen and (max-width: 1500px) {
+                    font-size: 20px;
+                }
             }
             &:hover,
             &:active {
