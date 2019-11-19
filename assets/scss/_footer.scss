@@ -1,0 +1,11 @@
+.footer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__copy {
+        font-weight: 300;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,25 @@
+.contact {
+    padding: 0 0 50px 0;
+
+    .contact-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+
+        li {
+            h3 {
+                font-weight: 500;
+                font-size: 32px;
+            }
+
+            a {
+                &:link,
+                &:visited {
+                    color: $color-main;
+                    font-weight: 300;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
