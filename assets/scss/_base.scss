@@ -16,6 +16,7 @@ body {
     background-color: $color-dark;
     color: $color-gray;
     font-family: 'Oswald', sans-serif;
+    line-height: 1.5;
     scroll-behavior: smooth;
 }
 
@@ -32,4 +33,19 @@ img {
 .container {
     margin: 0 auto;
     width: 1440px;
+}
+
+.section {
+
+    &__title {
+        margin-bottom: 50px;
+        color: $color-gray;
+        font-weight: 500;
+        font-size: 56px;
+    }
+}
+
+
+.works {
+    padding: 0 0 100px 0;
 }
