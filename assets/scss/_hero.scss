@@ -1,6 +1,7 @@
 .hero {
     padding: 0 0 40px 0;
     height: calc(100vh - 80px);
+    min-height: 600px;
 
     &__container {
         height: 100%;
@@ -62,6 +63,18 @@
             @media only screen and (max-width: 1500px) {
                 padding: 6px 26px;
                 font-size: 20px;
+            }
+        }
+    }
+
+    .decoration {
+        img {
+            @media only screen and (max-width: 1300px) {
+                width: 80%;
+            }
+
+            @media only screen and (max-width: 1000px) {
+                display: none;
             }
         }
     }

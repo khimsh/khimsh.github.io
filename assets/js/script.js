@@ -1,6 +1,6 @@
-const icons = document.querySelectorAll('.icon');
-icons.forEach (icon => {
-  icon.addEventListener('click', (event) => {
-    icon.classList.toggle("open");
-  });
-});
+// Open/Close Hamburger Menu Icon
+const hamburgerIcon = document.querySelector('.icon');
+
+hamburgerIcon.addEventListener('click', () => {
+    hamburgerIcon.classList.toggle('open');
+})

@@ -37,6 +37,15 @@ img {
     @media only screen and (max-width: 1500px) {
         width: 1200px;
     }
+
+    @media only screen and (max-width: 1300px) {
+        width: 900px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        margin: 0 15px;
+        width: calc(100% - 30px);
+    }
 }
 
 .section {
@@ -50,10 +59,18 @@ img {
         @media only screen and (max-width: 1500px) {
             font-size: 48px;
         }
+
+        @media only screen and (max-width: 680px) {
+            margin-bottom: 20px;
+        }
     }
 }
 
 
 .works {
     margin: 0 0 150px 0;
+
+    @media only screen and (max-width: 680px) {
+        margin: 0 0 60px 0;
+    }
 }

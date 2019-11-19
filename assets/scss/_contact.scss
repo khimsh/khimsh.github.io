@@ -1,10 +1,18 @@
 .contact {
     margin: 0 0 100px 0;
 
+    @media only screen and (max-width: 680px) {
+        margin: 0 0 40px 0;
+    }
+
     .contact-links {
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 50px;
+
+        @media only screen and (max-width: 680px) {
+            grid-template-columns: 1fr;
+        }
 
         li {
             h3 {

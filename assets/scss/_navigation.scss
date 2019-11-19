@@ -1,6 +1,10 @@
 .main-navigation {
   margin: 0 50px 0 auto;
 
+  @media only screen and (max-width: 580px) {
+    display: none;
+  }
+
   ul {
     display: flex;
 
@@ -24,17 +28,18 @@
 
 
 .lang-navigation {
-  ul {
-    display: flex;
+    display: none;
+    ul {
+        display: flex;
 
-    li {
-      a {
-        color: $color-gray;
-        text-transform: uppercase;
-        text-decoration: none;
+        li {
+            a {
+                color: $color-gray;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
       }
-    }
-  }
 }
 
 
@@ -45,6 +50,10 @@
 
 .nav-icon {
   display: none;
+
+  @media only screen and (max-width: 580px) {
+    display: block;
+  }
     &__btn {
         position: relative;
         border: none;
