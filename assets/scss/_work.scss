@@ -52,10 +52,19 @@
             &:link,
             &:visited {
                 margin-top: 20px;
-                display: block;
+                display: inline-block;
                 color: $color-gray;
                 font-size: 24px;
-                transition: all .2s ease-in;
+                text-decoration: none;
+                background:
+                         linear-gradient(
+                           to bottom, $color-main 0%,
+                           $color-main 100%
+                         );
+                        background-position: 0 100%;
+                        background-repeat: repeat-x;
+                        background-size: 4px 4px;
+                transition: background-size .2s;
 
                 @media only screen and (max-width: 1500px) {
                     font-size: 20px;
@@ -63,7 +72,7 @@
             }
             &:hover,
             &:active {
-                color: $color-main;
+                background-size: 4px 50px;
             }
         }
     }
