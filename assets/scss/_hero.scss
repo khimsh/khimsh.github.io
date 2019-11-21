@@ -2,6 +2,10 @@
     padding: 0 0 40px 0;
     height: calc(100vh - 80px);
     min-height: 600px;
+    @media only screen and (max-width: 1000px) {
+        min-height: 400px;
+    }
+
 
     &__container {
         height: 100%;
@@ -24,11 +28,24 @@
         @media only screen and (max-width: 1500px) {
             font-size: 36px;
         }
+        @media only screen and (max-width: 680px) {
+            font-size: 28px;
+        }
+        @media only screen and (max-width: 420px) {
+            margin-bottom: 40px;
+        }
     }
 
     &__ctas {
         margin-bottom: 20px;
         display: flex;
+        @media only screen and (max-width: 580px) {
+            justify-content: space-between;
+        }
+        @media only screen and (max-width: 420px) {
+            margin-bottom: 40px;
+            flex-direction: column;
+        }
 
         a {
             display: block;
@@ -61,6 +78,17 @@
                 padding: 6px 26px;
                 font-size: 20px;
             }
+            @media only screen and (max-width: 680px) {
+                font-size: 18px;
+            }
+            @media only screen and (max-width: 580px) {
+                margin: 0;
+            }
+            @media only screen and (max-width: 420px) {
+                margin-bottom: 30px;
+                padding: 10px;
+                text-align: center;
+            }
         }
 
         .secondary-cta {
@@ -88,6 +116,13 @@
                 padding: 6px 26px;
                 font-size: 20px;
             }
+            @media only screen and (max-width: 680px) {
+                font-size: 18px;
+            }
+            @media only screen and (max-width: 420px) {
+                padding: 10px;
+                text-align: center;
+            }
         }
     }
 
@@ -96,7 +131,6 @@
             @media only screen and (max-width: 1300px) {
                 width: 80%;
             }
-
             @media only screen and (max-width: 1000px) {
                 display: none;
             }
@@ -130,6 +164,9 @@
                 transition: all .2s ease-in;
                 @media only screen and (max-width: 1500px) {
                     font-size: 20px;
+                }
+                @media only screen and (max-width: 520px) {
+                    font-size: 22px;
                 }
             }
         }
