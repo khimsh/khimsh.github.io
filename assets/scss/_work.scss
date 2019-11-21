@@ -65,13 +65,21 @@
                         background-repeat: repeat-x;
                         background-size: 4px 4px;
                 transition: background-size .2s;
+                outline: none;
 
                 @media only screen and (max-width: 1500px) {
                     font-size: 20px;
                 }
             }
-            &:hover,
+            &:hover {
+                background-size: 4px 50px;
+            }
+            &:focus {
+                outline: 2px solid yellow;
+                outline-offset: 4px;
+            }
             &:active {
+                outline: none;
                 background-size: 4px 50px;
             }
         }
@@ -79,9 +87,18 @@
 
     &__image {
         flex-shrink: 0;
-
         a {
-            display: block;
+            &:link,
+            &:visited {
+                display: block;
+            }
+            &:focus {
+                outline: 2px solid yellow;
+                outline-offset: 4px;
+            }
+            &:active {
+                outline: none;
+            }
         }
     }
 }

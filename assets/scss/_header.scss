@@ -9,13 +9,31 @@
     &__logo {
         h1 {
             a {
-                display: block;
-                color: $color-gray;
-                font-weight: 700;
-                font-size: 24px;
-                text-decoration: none;
+                &:link,
+                &:visited {
+                    display: block;
+                    color: $color-gray;
+                    font-weight: 700;
+                    font-size: 24px;
+                    text-decoration: none;
+                    transition: color .2s ease-in;
+                }
+                &:hover {
+                    color: $color-main;
+                    span {
+                        color: $color-gray;
+                    }
+                }
+                &:focus {
+                    outline: 2px solid yellow;
+                    outline-offset: 4px;
+                }
+                &:active {
+                    outline: none;
+                }
                 span {
                     color: $color-main;
+                    transition: color .2s ease-in;
                 }
             }
         }
