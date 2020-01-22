@@ -1,7 +1,11 @@
 .work {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: $color-dark-2;
+    border-radius: 4px;
+    box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.2);
 
     @media only screen and (max-width: 1000px) {
         flex-direction: column;
@@ -9,7 +13,7 @@
     }
 
     &:not(:last-child) {
-        margin-bottom: 120px;
+        margin-bottom: 60px;
     }
 
     &__description {
@@ -18,6 +22,7 @@
         @media only screen and (max-width: 1000px) {
             margin-bottom: 30px;
         }
+
         h3 {
             margin-bottom: 25px;
             font-weight: 500;
@@ -28,6 +33,7 @@
                 font-size: 26px;
             }
         }
+
         p {
             font-weight: 300;
             font-size: 24px;
@@ -44,11 +50,14 @@
                     margin-bottom: 5px;
                 }
             }
+
             @media only screen and (max-width: 1500px) {
                 font-size: 20px;
             }
         }
+
         a {
+
             &:link,
             &:visited {
                 margin-top: 20px;
@@ -57,13 +66,11 @@
                 font-size: 24px;
                 text-decoration: none;
                 background:
-                         linear-gradient(
-                           to bottom, $color-main 0%,
-                           $color-main 100%
-                         );
-                        background-position: 0 100%;
-                        background-repeat: repeat-x;
-                        background-size: 4px 4px;
+                    linear-gradient(to bottom, $color-main 0%,
+                        $color-main 100%);
+                background-position: 0 100%;
+                background-repeat: repeat-x;
+                background-size: 4px 4px;
                 transition: background-size .2s;
                 outline: none;
 
@@ -71,13 +78,16 @@
                     font-size: 20px;
                 }
             }
+
             &:hover {
                 background-size: 4px 50px;
             }
+
             &:focus {
                 outline: 2px solid yellow;
                 outline-offset: 4px;
             }
+
             &:active {
                 outline: none;
                 background-size: 4px 50px;
@@ -87,15 +97,19 @@
 
     &__image {
         flex-shrink: 0;
+
         a {
+
             &:link,
             &:visited {
                 display: block;
             }
+
             &:focus {
                 outline: 2px solid yellow;
                 outline-offset: 4px;
             }
+
             &:active {
                 outline: none;
             }
