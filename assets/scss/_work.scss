@@ -13,7 +13,7 @@
     }
 
     @media only screen and (max-width: 780px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         column-gap: 0;
         row-gap: 30px;
     }
@@ -23,6 +23,10 @@
     }
 
     &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
         @media only screen and (max-width: 1000px) {
             margin-bottom: 30px;
         }
@@ -41,11 +45,6 @@
         p {
             font-weight: 300;
             font-size: 24px;
-            max-width: 70%;
-
-            @media only screen and (max-width: 1000px) {
-                max-width: 100%;
-            }
 
             &:not(:last-child) {
                 margin-bottom: 15px;
@@ -65,7 +64,6 @@
             &:link,
             &:visited {
                 margin-top: 20px;
-                display: inline-block;
                 color: $color-gray;
                 font-size: 24px;
                 text-decoration: none;
@@ -77,6 +75,7 @@
                 background-size: 4px 4px;
                 transition: background-size .2s;
                 outline: none;
+                overflow-wrap: break-word;
 
                 @media only screen and (max-width: 1500px) {
                     font-size: 20px;
@@ -103,10 +102,6 @@
         @media only screen and (max-width: 1000px) {
             max-width: 320px;
             height: auto;
-        }
-
-        @media only screen and (max-width: 1000px) {
-            max-width: 400px;
         }
 
         a {
