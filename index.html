@@ -1,232 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Ia Khimshiashvili - Front-end web developer.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Ia Khimshiashvili - Front-end web developer."
+    />
     <title>Ia Khimsh - Portfolio</title>
 
     <!-- Font: Oswald -->
-    <link prefetch href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700&display=swap" rel="stylesheet">
+    <link
+      prefetch
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/main.min.css" />
 
     <!-- Icon Font: Font Awesome -->
-    <link prefetch rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-</head>
+    <link
+      prefetch
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container header__container">
-            <div class="header__logo">
-                <h1><a href="/"><span>i</span>a Kh<span>i</span>msh</a></h1>
+      <div class="container header__container">
+        <div class="header__logo">
+          <h1>
+            <a href="/"><span>i</span>a Kh<span>i</span>msh</a>
+          </h1>
+        </div>
+
+        <nav class="main-navigation" id="nav">
+          <h3 class="sr-only">Main Navigation</h3>
+          <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+        <!-- end Main Nav -->
+
+        <!-- Hamburger Icon: only shown on mobile -->
+        <div class="nav-icon">
+          <button class="nav-icon__btn">
+            <div class="icon nav-icon-1">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-
-            <nav class="main-navigation" id="nav">
-                <h3 class="sr-only">Main Navigation</h3>
-                <ul>
-                    <li><a href="/">home</a></li>
-                    <li><a href="#works">works</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </nav><!-- end Main Nav -->
-
-            <!-- Hamburger Icon: only shown on mobile -->
-            <div class="nav-icon">
-                <button class="nav-icon__btn">
-                    <div class="icon nav-icon-1">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </button>
-            </div><!-- end Hamburger Icon -->
-        </div><!-- end Container -->
-    </header><!-- end Header -->
+          </button>
+        </div>
+        <!-- end Hamburger Icon -->
+      </div>
+      <!-- end Container -->
+    </header>
+    <!-- end Header -->
 
     <section class="section hero">
-        <div class="container hero__container">
-            <div class="hero__content">
-                <div>
-                    <h2 class="hero__tagline">Building User Interfaces One Line Of Code At A Time!</h2>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <div>
+            <h2 class="hero__tagline">
+              Building User Interfaces One Line Of Code At A Time!
+            </h2>
 
-
-                    <div class="hero__ctas">
-                        <a href="#works" class="main-cta">View my Works</a>
-                        <a href="#contact" class="secondary-cta">Get in Touch</a>
-                    </div>
-
-                    <ul class="social-links">
-                        <li>
-                            <a href="mailto:i.khimsh@gmail.com" target="_blank" rel="noreferrer">
-                                <i class="fas fa-envelope"></i>
-                                <span class="sr-only">i.khimsh@gmail.com</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/khimsh" target="_blank" rel="noreferrer">
-                                <i class="fab fa-git-alt"></i>
-                                <span class="sr-only">github.com/khimsh</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/ia-khimsh/" target="_blank" rel="noreferrer">
-                                <i class="fab fa-linkedin"></i>
-                                <span class="sr-only">https://www.linkedin.com/in/ia-khimsh/</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="decoration">
-                    <img src="assets/img/decoration.png" alt="simple html code decoration.">
-                </div>
+            <div class="hero__ctas">
+              <a href="#works" class="main-cta">View my Works</a>
+              <a href="#contact" class="secondary-cta">Get in Touch</a>
             </div>
-        </div><!-- end Container -->
-    </section><!-- end section Hero -->
+
+            <ul class="social-links">
+              <li>
+                <a
+                  href="mailto:i.khimsh@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fas fa-envelope"></i>
+                  <span class="sr-only">i.khimsh@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/khimsh"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-git-alt"></i>
+                  <span class="sr-only">github.com/khimsh</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ia-khimsh/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fab fa-linkedin"></i>
+                  <span class="sr-only"
+                    >https://www.linkedin.com/in/ia-khimsh/</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="decoration">
+            <img
+              src="assets/img/decoration.png"
+              alt="simple html code decoration."
+            />
+          </div>
+        </div>
+      </div>
+      <!-- end Container -->
+    </section>
+    <!-- end section Hero -->
 
     <section class="section works" id="works">
-        <div class="container">
-            <h2 class="section__title">My Works</h2>
+      <div class="container">
+        <h2 class="section__title">My Works</h2>
 
-            <div class="works__container">
-                <!-- Works -->
-                <div class="work">
-                    <div class="work__description">
-                        <h3>cushwake.ge</h3>
-                        <p>cushwake.ge is a website for real estate agency based in London. I was employed as an
-                            outsource developer by <a href="http://artmedia.ge/" class="link--inline" target="_blank"
-                                rel="noopener noreferrer">artmedia.ge</a>. The website is not live yet, this is only a
-                            preview.</p>
-                        <p>My contribution: CSS(SCSS)</p>
-                        <a href="http://cushwake.ge/" target="_blank" rel="noreferrer">http://cushwake.ge/</a>
-                    </div><!-- .work__description -->
+        <div class="works__container">
+          <!-- Works -->
+          <div class="work">
+            <div class="work__description">
+              <h3>Mtevino</h3>
+              <p>
+                Mtevino Winery is located near Tbilisi in Khashmi Village at
+                Sagarejo Municipality (20 minutes drive from the Tbilisi
+                airport). It is 40 km from Tbilisi.
+              </p>
+              <p>
+                I was employed as an outsource developer by
+                <a
+                  href="http://artmedia.ge/"
+                  class="link--inline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >artmedia.ge</a
+                >. The website is still in development stage.
+              </p>
+              <p>My contribution: CSS(SCSS)</p>
+              <a
+                href="http://mtevino.artmedia.ge/"
+                target="_blank"
+                rel="noreferrer"
+                >http://mtevino.artmedia.ge/</a
+              >
+            </div>
+            <!-- .work__description -->
 
-                    <figure class="work__image">
-                        <a href="cushwake.ge/index.html" target="_blank" rel="noreferrer">
-                            <img src="assets/img/cushwake.ge.png" alt="cushwake.ge preview website.">
-                        </a>
-                    </figure>
-                </div><!-- .work -->
+            <figure class="work__image">
+              <a
+                href="http://mtevino.artmedia.ge/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="assets/img/mtevino.jpg"
+                  alt="mtevino.ge website screenshot."
+                />
+              </a>
+            </figure>
+          </div>
+          <!-- .work -->
 
-                <!-- Works -->
-                <div class="work">
-                    <div class="work__description">
-                        <h3>blainefuckingfuller.com</h3>
-                        <p>blainefuckingfuller.com is a portfolio website for an american writer/director/producer,
-                            Blaine Fuller.</p>
-                        <p>My contribution: HTML, CSS, JS</p>
-                        <a href="http://blainefuckingfuller.com/" target="_blank"
-                            rel="noreferrer">http://blainefuckingfuller.com/</a>
-                    </div><!-- .work__description -->
+          <!-- Works -->
+          <div class="work">
+            <div class="work__description">
+              <h3>cushwake.ge</h3>
+              <p>
+                cushwake.ge is a website for real estate agency based in London.
+              </p>
+              <p>
+                I was employed as an outsource developer by
+                <a
+                  href="http://artmedia.ge/"
+                  class="link--inline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >artmedia.ge</a
+                >.
+              </p>
+              <p>My contribution: CSS(SCSS)</p>
+              <a href="http://cushwake.ge/" target="_blank" rel="noreferrer"
+                >http://cushwake.ge/</a
+              >
+            </div>
+            <!-- .work__description -->
 
-                    <figure class="work__image">
-                        <a href="http://blainefuckingfuller.com/" target="_blank" rel="noreferrer">
-                            <img src="assets/img/Blaine-Fuller.png" alt="Blaine Fuller website.">
-                        </a>
-                    </figure>
-                </div><!-- .work -->
+            <figure class="work__image">
+              <a href="http://cushwake.ge/" target="_blank" rel="noreferrer">
+                <img
+                  src="assets/img/cushwake.ge.jpg"
+                  alt="cushwake.ge website screenshot."
+                />
+              </a>
+            </figure>
+          </div>
+          <!-- .work -->
 
-                <div class="work">
-                    <div class="work__description">
-                        <h3>Luxury Real Estate Agency - White Estate</h3>
-                        <p>White Estate is a real estate agency located in Nice.</p>
-                        <p>My contribution: SCSS, modification of existing angular components to fit new designs.</p>
-                        <a href="https://white-estate.fr/en" target="_blank"
-                            rel="noreferrer">https://white-estate.fr/en</a>
-                    </div><!-- .work__description -->
+          <!-- Works -->
+          <div class="work">
+            <div class="work__description">
+              <h3>blainefuckingfuller.com</h3>
+              <p>
+                blainefuckingfuller.com is a portfolio website for an american
+                writer/director/producer, Blaine Fuller.
+              </p>
+              <p>My contribution: HTML, CSS, JS</p>
+              <a
+                href="http://blainefuckingfuller.com/"
+                target="_blank"
+                rel="noreferrer"
+                >http://blainefuckingfuller.com/</a
+              >
+            </div>
+            <!-- .work__description -->
 
-                    <figure class="work__image">
-                        <a href="https://white-estate.fr/en" target="_blank" rel="noreferrer">
-                            <img src="assets/img/White-Estate.jpg" alt="Luxury Real Estate Agency - White Estate.">
-                        </a>
-                    </figure>
-                </div><!-- .work -->
+            <figure class="work__image">
+              <a
+                href="http://blainefuckingfuller.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="assets/img/Blaine-Fuller.png"
+                  alt="Blaine Fuller website."
+                />
+              </a>
+            </figure>
+          </div>
+          <!-- .work -->
 
-                <div class="work">
-                    <div class="work__description">
-                        <h3>AlecaLOL</h3>
-                        <p>AlecaLOL is the most complete app for League Of Legends. Apart from the usual stats, AlecaLOL
-                            lets you automatically set up your runes, choose a random skin and win amazing rewards!</p>
-                        <p>My contribution: Front-end work(HTML, CSS, JS) and parts of the UI
-                            design.</p>
-                        <a href="http://www1.overwolf.com/app/Alejandro_Cabrerizo-AlecaLOL" target="_blank"
-                            rel="noreferrer">view the app in overwolf
-                            store</a>
-                    </div><!-- .work__description -->
+          <div class="work">
+            <div class="work__description">
+              <h3>Luxury Real Estate Agency - White Estate</h3>
+              <p>White Estate is a real estate agency located in Nice.</p>
+              <p>
+                My contribution: SCSS, modification of existing angular
+                components to fit new designs.
+              </p>
+              <a
+                href="https://white-estate.fr/en"
+                target="_blank"
+                rel="noreferrer"
+                >https://white-estate.fr/en</a
+              >
+            </div>
+            <!-- .work__description -->
 
-                    <figure class="work__image">
-                        <a href="http://www1.overwolf.com/app/Alejandro_Cabrerizo-AlecaLOL" target="_blank"
-                            rel="noreferrer">
-                            <img src="assets/img/LOL-UI.png" alt="AlecaLOL app.">
-                        </a>
-                    </figure>
-                </div><!-- .work -->
+            <figure class="work__image">
+              <a
+                href="https://white-estate.fr/en"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="assets/img/white_estate.jpg"
+                  alt="Luxury Real Estate Agency - White Estate."
+                />
+              </a>
+            </figure>
+          </div>
+          <!-- .work -->
 
-                <div class="work">
-                    <div class="work__description">
-                        <h3>Is today a National Holiday?</h3>
-                        <p>"Is it a holiday?" is an app that makes use of calendarific api to determin whether the given
-                            day is a national holiday.</p>
-                        <p>My contribution: All of the app.</p>
-                        <a href="https://khimsh.github.io/isitaholiday/" target="_blank"
-                            rel="noreferrer">/isitaholiday</a>
-                    </div><!-- .work__description -->
+          <div class="work">
+            <div class="work__description">
+              <h3>AlecaLOL</h3>
+              <p>
+                AlecaLOL is the most complete app for League Of Legends. Apart
+                from the usual stats, AlecaLOL lets you automatically set up
+                your runes, choose a random skin and win amazing rewards!
+              </p>
+              <p>
+                My contribution: Front-end work(HTML, CSS, JS) and parts of the
+                UI design.
+              </p>
+              <a
+                href="http://www1.overwolf.com/app/Alejandro_Cabrerizo-AlecaLOL"
+                target="_blank"
+                rel="noreferrer"
+                >view the app in overwolf store</a
+              >
+            </div>
+            <!-- .work__description -->
 
-                    <figure class="work__image">
-                        <a href="https://khimsh.github.io/isitaholiday/" target="_blank" rel="noreferrer">
-                            <img src="assets/img/isitaholiday.png" alt="Is today a holiday?">
-                        </a>
-                    </figure>
-                </div><!-- .work -->
+            <figure class="work__image">
+              <a
+                href="http://www1.overwolf.com/app/Alejandro_Cabrerizo-AlecaLOL"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="assets/img/LOL-UI.png" alt="AlecaLOL app." />
+              </a>
+            </figure>
+          </div>
+          <!-- .work -->
 
-            </div><!-- .works__container -->
-        </div><!-- end Container -->
-    </section><!-- end section Works -->
+          <div class="work">
+            <div class="work__description">
+              <h3>Is today a National Holiday?</h3>
+              <p>
+                "Is it a holiday?" is an app that makes use of calendarific api
+                to determin whether the given day is a national holiday.
+              </p>
+              <p>My contribution: All of the app.</p>
+              <a
+                href="https://khimsh.github.io/isitaholiday/"
+                target="_blank"
+                rel="noreferrer"
+                >/isitaholiday</a
+              >
+            </div>
+            <!-- .work__description -->
+
+            <figure class="work__image">
+              <a
+                href="https://khimsh.github.io/isitaholiday/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="assets/img/isitaholiday.png"
+                  alt="Is today a holiday?"
+                />
+              </a>
+            </figure>
+          </div>
+          <!-- .work -->
+        </div>
+        <!-- .works__container -->
+      </div>
+      <!-- end Container -->
+    </section>
+    <!-- end section Works -->
 
     <section class="section contact" id="contact">
-        <div class="container">
-            <h2 class="section__title">Get in touch</h2>
+      <div class="container">
+        <h2 class="section__title">Get in touch</h2>
 
-            <ul class="contact-links">
-                <li>
-                    <h3>Drop an e-mail</h3>
-                    <a href="mailto:i.khimsh@gmail.com">i.khimsh@gmail.com</a>
-                </li>
-                <li>
-                    <h3>Visit my Linkedin page</h3>
-                    <a href="https://www.linkedin.com/in/ia-khimsh/" target="_blank"
-                        rel="noreferrer">linkedin.com/in/ia-khimsh/</a>
-                </li>
-                <li>
-                    <h3>View my code at github</h3>
-                    <a href="https://github.com/khimsh" target="_blank" rel="noreferrer">github.com/khimsh</a>
-                </li>
-                <li>
-                    <h3>Check out my resume</h3>
-                    <a href="https://khimsh.github.io/resume/" target="_blank" rel="noreferrer">Resume</a>
-                </li>
-            </ul>
-        </div>
-    </section><!-- end section Contact -->
+        <ul class="contact-links">
+          <li>
+            <h3>Drop an e-mail</h3>
+            <a href="mailto:i.khimsh@gmail.com">i.khimsh@gmail.com</a>
+          </li>
+          <li>
+            <h3>Visit my Linkedin page</h3>
+            <a
+              href="https://www.linkedin.com/in/ia-khimsh/"
+              target="_blank"
+              rel="noreferrer"
+              >linkedin.com/in/ia-khimsh/</a
+            >
+          </li>
+          <li>
+            <h3>View my code at github</h3>
+            <a href="https://github.com/khimsh" target="_blank" rel="noreferrer"
+              >github.com/khimsh</a
+            >
+          </li>
+          <li>
+            <h3>Check out my resume</h3>
+            <a
+              href="https://khimsh.github.io/resume/"
+              target="_blank"
+              rel="noreferrer"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- end section Contact -->
 
     <footer class="footer">
-        <div class="footer__copy">
-            &copy; iaKhimsh &ndash; 2019
-        </div>
-    </footer><!-- end Footer -->
+      <div class="footer__copy">
+        &copy; iaKhimsh &ndash; 2019
+      </div>
+    </footer>
+    <!-- end Footer -->
 
     <script src="assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>
