@@ -1,174 +1,172 @@
 .hero {
-    padding: 0 0 40px 0;
-    height: calc(100vh - 80px);
-    min-height: 600px;
-    @media only screen and (max-width: 1000px) {
-        min-height: 400px;
+  padding: 0 0 40px 0;
+  height: calc(100vh - 80px);
+  min-height: 600px;
+  @media only screen and (max-width: 1000px) {
+    min-height: 400px;
+  }
+
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__tagline {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 48px;
+
+    @media only screen and (max-width: 1500px) {
+      font-size: 36px;
+    }
+    @media only screen and (max-width: 680px) {
+      font-size: 28px;
+    }
+    @media only screen and (max-width: 420px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__ctas {
+    margin-bottom: 20px;
+    display: flex;
+    @media only screen and (max-width: 580px) {
+      justify-content: space-between;
+    }
+    @media only screen and (max-width: 420px) {
+      margin-bottom: 40px;
+      flex-direction: column;
     }
 
-
-    &__container {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    a {
+      display: block;
     }
 
-    &__content {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    .main-cta {
+      margin-right: 40px;
+      padding: 8px 32px;
+      color: $color-gray;
+      font-weight: 500;
+      font-size: 24px;
+      text-decoration: none;
+      background-color: $color-main;
+      border-radius: 2px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      transition: all 0.2s ease-in;
+      &:hover {
+        background-color: #1f46d4;
+        box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+      }
+      &:focus {
+        outline: 2px solid yellow;
+        outline-offset: 4px;
+      }
+      &:active {
+        outline: none;
+        transform: translateY(2px);
+      }
+      @media only screen and (max-width: 1500px) {
+        padding: 6px 26px;
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 680px) {
+        font-size: 18px;
+      }
+      @media only screen and (max-width: 580px) {
+        margin: 0;
+      }
+      @media only screen and (max-width: 420px) {
+        margin-bottom: 30px;
+        padding: 10px;
+        text-align: center;
+      }
     }
 
-    &__tagline {
-        margin-bottom: 20px;
-        font-weight: 500;
-        font-size: 48px;
-
-        @media only screen and (max-width: 1500px) {
-            font-size: 36px;
-        }
-        @media only screen and (max-width: 680px) {
-            font-size: 28px;
-        }
-        @media only screen and (max-width: 420px) {
-            margin-bottom: 40px;
-        }
+    .secondary-cta {
+      padding: 8px 32px;
+      color: $color-gray;
+      font-weight: 300;
+      font-size: 24px;
+      text-decoration: none;
+      background-color: $color-darkgray;
+      border-radius: 2px;
+      transition: all 0.2s ease-in;
+      &:hover {
+        background-color: #5c5b5b;
+        box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+      }
+      &:focus {
+        outline: 2px solid yellow;
+        outline-offset: 4px;
+      }
+      &:active {
+        outline: none;
+        transform: translateY(2px);
+      }
+      @media only screen and (max-width: 1500px) {
+        padding: 6px 26px;
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 680px) {
+        font-size: 18px;
+      }
+      @media only screen and (max-width: 420px) {
+        padding: 10px;
+        text-align: center;
+      }
     }
+  }
 
-    &__ctas {
-        margin-bottom: 20px;
-        display: flex;
-        @media only screen and (max-width: 580px) {
-            justify-content: space-between;
-        }
-        @media only screen and (max-width: 420px) {
-            margin-bottom: 40px;
-            flex-direction: column;
-        }
-
-        a {
-            display: block;
-        }
-
-        .main-cta {
-            margin-right: 40px;
-            padding: 8px 32px;
-            color: $color-gray;
-            font-weight: 500;
-            font-size: 24px;
-            text-decoration: none;
-            background-color: $color-main;
-            border-radius: 2px;
-            box-shadow: 0 4px 4px rgba(0,0,0,.25);
-            transition: all .2s ease-in;
-            &:hover {
-                background-color: #1f46d4;
-                box-shadow: 4px 6px 10px rgba(0,0,0,.4);
-            }
-            &:focus {
-                outline: 2px solid yellow;
-                outline-offset: 4px;
-            }
-            &:active {
-                outline: none;
-                transform: translateY(2px);
-            }
-            @media only screen and (max-width: 1500px) {
-                padding: 6px 26px;
-                font-size: 20px;
-            }
-            @media only screen and (max-width: 680px) {
-                font-size: 18px;
-            }
-            @media only screen and (max-width: 580px) {
-                margin: 0;
-            }
-            @media only screen and (max-width: 420px) {
-                margin-bottom: 30px;
-                padding: 10px;
-                text-align: center;
-            }
-        }
-
-        .secondary-cta {
-            padding: 8px 32px;
-            color: $color-gray;
-            font-weight: 300;
-            font-size: 24px;
-            text-decoration: none;
-            background-color: $color-darkgray;
-            border-radius: 2px;
-            transition: all .2s ease-in;
-            &:hover {
-                background-color: #5c5b5b;
-                box-shadow: 4px 6px 10px rgba(0,0,0,.4);
-            }
-            &:focus {
-                outline: 2px solid yellow;
-                outline-offset: 4px;
-            }
-            &:active {
-                outline: none;
-                transform: translateY(2px);
-            }
-            @media only screen and (max-width: 1500px) {
-                padding: 6px 26px;
-                font-size: 20px;
-            }
-            @media only screen and (max-width: 680px) {
-                font-size: 18px;
-            }
-            @media only screen and (max-width: 420px) {
-                padding: 10px;
-                text-align: center;
-            }
-        }
+  .decoration {
+    img {
+      @media only screen and (max-width: 1300px) {
+        width: 80%;
+      }
+      @media only screen and (max-width: 1000px) {
+        display: none;
+      }
     }
-
-    .decoration {
-        img {
-            @media only screen and (max-width: 1300px) {
-                width: 80%;
-            }
-            @media only screen and (max-width: 1000px) {
-                display: none;
-            }
-        }
-    }
+  }
 }
 
-
 .social-links {
-    display: flex;
-    li {
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-        a {
-            &:hover {
-                i {
-                    color: $color-main;
-                }
-            }
-            &:focus {
-                outline: 2px solid yellow;
-                outline-offset: 4px;
-            }
-            &:active {
-                outline: none;
-            }
-            i {
-                font-size: 24px;
-                color: $color-gray;
-                transition: all .2s ease-in;
-                @media only screen and (max-width: 1500px) {
-                    font-size: 20px;
-                }
-                @media only screen and (max-width: 520px) {
-                    font-size: 22px;
-                }
-            }
-        }
+  display: flex;
+  li {
+    &:not(:last-child) {
+      margin-right: 20px;
     }
+    a {
+      &:hover {
+        i {
+          color: $color-main;
+        }
+      }
+      &:focus {
+        outline: 2px solid yellow;
+        outline-offset: 4px;
+      }
+      &:active {
+        outline: none;
+      }
+      i {
+        font-size: 24px;
+        color: $color-gray;
+        transition: all 0.2s ease-in;
+        @media only screen and (max-width: 1500px) {
+          font-size: 20px;
+        }
+        @media only screen and (max-width: 520px) {
+          font-size: 22px;
+        }
+      }
+    }
+  }
 }
