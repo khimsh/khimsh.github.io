@@ -1,8 +1,8 @@
-@import "vars";
-@import "base";
-@import "header";
-@import "navigation";
-@import "hero";
-@import "work";
-@import "contact";
-@import "footer";
+@import '01_base/vars';
+@import '01_base/base';
+@import '02_components/header';
+@import '02_components/navigation';
+@import '02_components/hero';
+@import '02_components/work';
+@import '02_components/contact';
+@import '02_components/footer';
