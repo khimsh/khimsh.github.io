@@ -20,7 +20,7 @@
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
     "babelify": "^10.0.0",
-    "browser-sync": "^3.0.2",
+    "browser-sync": "^3.0.3",
     "browserify": "^16.5.2",
     "browserify-shim": "^3.8.16",
     "gulp": "^5.0.0",
